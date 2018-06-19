@@ -1,0 +1,77 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8">
+		<link href="css/template.css" rel="stylesheet" type="text/css"/>
+
+		<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+		<script src="js/jquery-validate.js"></script>
+	</head>
+
+	<script type=text/javascript>
+		$(function () {
+			// Валидация через механизм
+			window.validation.init({
+				container: '.form-1',
+				submitHandler: function () {
+					alert('Валидация первой формы прошла успешно!');
+				}
+			});
+			
+			// Ручная валидация, доступная в любой момент
+			$('.form-2 .save-button').on('click', function () {
+				if(window.validation.isValid({ container: '.form-2' })) {
+					alert('Валидация второй формы прошла успешно!');
+				}
+			});
+			
+		});
+	</script>
+
+	<body>
+		<br/>
+		<br/>
+		<br/>
+		<div class="form-1 form">
+			<div class="header">Валидации формы в режиме реального времени</div>
+			<div class="label">Имя</div>
+			<div class="field"><input type="text" name="UserName" class="field-input required alphanumeric" /></div>
+			<div class="label">Email</div>
+			<div class="field"><input type="text" name="Email" class="field-input required email" /></div>
+			<div class="label">Пароль (цифры, буквы и пробел)</div>
+			<div class="field"><input type="password" name="Password" class="field-input required password" /></div>
+			<div class="label">Подтверждение пароля</div>
+			<div class="field"><input type="password" name="CheckPass" class="field-input required confirmfield" confirm-field="Password" /></div>
+			<div class="label">URL</div>
+			<div class="field"><input type="text" name="Url" class="field-input url" /></div>
+			<div class="label">Дата форматы ГГГГ-ММ-ДД и ДД.ММ.ГГГГ</div>
+			<div class="field"><input type="text" name="Date" class="field-input date" /></div>
+			
+			<div class="clear"></div>
+			<div class="btn-panel">
+				<button class="save-button" >Отправить форму </button>
+			</div>
+		</div>
+		<div class="form-2 form">
+			<div class="header">Пример ручной валидации формы</div>
+			<div class="label">Имя</div>
+			<div class="field"><input type="text" name="UserName" class="field-input required alphanumeric" /></div>
+			<div class="label">Email</div>
+			<div class="field"><input type="text" name="Email" class="field-input required email" /></div>
+			<div class="label">Пароль (цифры, буквы и пробел)</div>
+			<div class="field"><input type="password" name="Password" class="field-input required password" /></div>
+			<div class="label">Подтверждение пароля</div>
+			<div class="field"><input type="password" name="CheckPass" class="field-input required confirmfield" confirm-field="Password" /></div>
+			<div class="label">URL</div>
+			<div class="field"><input type="text" name="Url" class="field-input url" /></div>
+			<div class="label">Дата форматы ГГГГ-ММ-ДД и ДД.ММ.ГГГГ</div>
+			<div class="field"><input type="text" name="Date" class="field-input date" /></div>
+			
+			<div class="clear"></div>
+			<div class="btn-panel">
+				<button class="save-button" >Отправить форму </button>
+			</div>
+		</div>
+
+	</body>
+</html>

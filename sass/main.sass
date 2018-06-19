@@ -1,0 +1,246 @@
+@import bourbon
+@import vars.sass
+
+//Load Libs SASS
+@import app/libs/animate/animate.sass
+@import app/libs/font-awesome-4/css/font-awesome.sass
+@import app/libs/owl-carousel/owl.carousel.sass
+@import app/libs/owl-carousel/owl.transitions.sass
+@import app/libs/fancy-box/jquery.fancybox.sass
+// Styles heres
+
+.s-bags
+	.col-lg-4
+		padding: 0
+	.grid-item
+		display: block
+		position: relative
+		overflow: hidden
+		&-content
+			position: absolute
+			padding-top: 40%
+			top: 0
+			left: 0
+			width: 100%
+			height: 100%
+			background-color: rgba(0,0,0,.15)
+			text-align: center
+			opacity: 0
+			font-size: 36px
+			color: #fff
+			+mt(.7s)
+		img
+			+mt(.5s)
+		&:hover
+			.grid-item-content
+				opacity: 1
+			img
+				transform: scale(1.01)
+
+.s-about
+	background: darken($accent, 6%)
+	padding-bottom: 100px
+	color: #fff
+	h4
+		color: #f0f0f0
+		margin-bottom: 50px
+	.carousel-wrapper
+		position: relative
+		.item
+			img
+				display: block
+				margin: 0 auto
+		.next-button,
+		.prev-button
+			position: absolute
+			top: 50%
+			width: 70px
+			height: 70px
+			margin-top: -25px
+			border-radius: 50%
+			font-size: 50px
+			line-height: 70px
+			text-align: center
+			vertical-align: middle
+			background-color: rgba(0,0,0,.075)
+			img
+				display: block
+				width: 100%
+			+mt(.3s)
+			&:hover
+				background-color: rgba(0,0,0,.2)
+		.next-button
+			right: -75px
+		.prev-button
+			left: -75px
+
+.s-facilities
+	padding: 100px 0
+	background: url('../img/bg-facilities.jpg') bottom center no-repeat
+	background-size: cover
+	h4
+		color: #f0f0f0
+		text-shadow: 0 0 5px rgba(0,0,0,.4)
+	img
+		max-width: 100px
+		width: 100%
+		display: block
+		margin: 0 auto
+
+.cerf-cont
+	box-shadow: 0px 2px 10px 0px rgba(0,0,0,0.31)
+
+.s-partners
+	.carousel-partners
+		.item
+			img
+				display: block
+				margin: 0 auto
+
+.s-moreinfo
+	padding-bottom: 100px
+	ul
+		padding-left: 0
+		list-style-type: none
+		font-family: "OpenSansLight", sans-serif
+		font-size: 20px
+		li
+			margin: 12px 0
+
+.s-fin
+	background: url('../img/bg-fin.jpg') center center no-repeat
+	background-size: cover
+	padding-bottom: 100px
+	h4
+		margin-bottom: 50px
+
+.map
+	padding-top: 0
+	.map-content
+		z-index: 5
+		height: 450px
+		iframe
+			width: 100%
+			height: 450px
+			z-index: 5
+	.container
+		margin-top: -450px
+		position: relative
+		height: 450px
+	.map-locker
+		display: none
+		position: absolute
+		width: 100%
+		left: 0
+		top: 0
+		height: 500px
+		margin-top: -500px
+	.contacts-block
+		position: absolute
+		left: 0
+		top: 50%
+		margin-top: -185px
+		width: 425px
+		height: 370px
+		z-index: 101
+		padding: 40px
+		background-color: #fff
+		box-shadow: 0px 2px 10px 0px rgba(0,0,0,0.31)
+		h3
+			letter-spacing: 8px
+			margin-top: 0px
+			margin-bottom: 25px
+		p
+			font-family: "OpenSansRegular", sans-serif
+			font-size: 21px
+			line-height: 34px
+
+		.work-time
+			font-size: 14px
+			line-height: 24px
+			span
+				font-weight: 400
+				color: #000
+				font-family: "OpenSansSemiBold", sans-serif
+
+footer
+	background-color: $accent
+	color: #fff
+	a
+		color: #fff
+		&:hover
+			color: #fff
+			text-decoration: underline
+		&:focus
+			color: #fff
+
+.footer-top
+	padding: 25px 0
+	.logo
+		width: 100%
+		max-width: 220px
+		margin-top: 25px
+	.links
+		text-align: right
+	.social
+		ul
+			padding-left: 0
+			li
+				display: inline-block
+				list-style-type: none
+				margin-left: 10px
+				margin-right: 10px
+				font-size: 28px
+	.widget-wrapper
+		width: 290px
+		img
+			width: 100%
+	.contacts
+		.number
+			color: #fff
+			float: none
+			text-decoration: none
+			display: block
+			margin-bottom: 4px
+		.sm-btn
+			border-color: #fff
+			text-decoration: none
+			&:hover
+				background-color: #fff
+				color: $accent
+		.maillink
+			margin-bottom: 14px
+			display: block
+
+.footer-bottom
+	background-color: darken($accent,6%)
+	text-align: right
+	.copy
+		float: left
+		.conf
+			margin-left: 20px
+	.devel
+		float: right
+		margin-right: 80px
+		span
+			display: inline-block
+			margin-top: 2px
+		a
+			display: inline-block
+			width: 85px
+			float: right
+			margin-top: 0px
+			margin-left: 6px
+			svg
+				width: 100%
+				+mt(.5s)
+			&:hover
+				svg
+					color: #fff
+					text-shadow: 0 0 8px rgb(176,34,110)
+					text-shadow: 0 0 1px #ffffff, 0 0 2px #ffffff, 0 0 3px #ff00de, 0 0 5px #ff00de, 0 0 8px #ff00de, 0 0 10px #ff00de, 0 0 12px #ff00de
+					text-decoration: none
+
+
+//ALWAYS END
+@import media

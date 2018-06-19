@@ -1,0 +1,73 @@
+.field-input.input-ok
+{
+    background: url(../images/icon-ok.png) no-repeat right center #e3ffe5;
+    border: 1px solid #96b796;
+    line-height: 19px;
+}
+
+.field-input.input-error
+{
+    background: url(../images/icon-fail.png) no-repeat right center #ffebef;
+    border: 1px solid red;
+    line-height: 19px;
+}
+
+.clear
+{
+	clear:both;
+}
+
+body
+{
+	width: 1000px;
+	margin:auto;
+}
+
+.form
+{
+	float: left;
+	width: 490px;
+	margin-right: 5px;
+}
+
+.form .header
+{
+	color: blue;
+	font-size: 20px;
+	font-family: georgia;
+	margin-bottom: 10px
+}
+
+.form .label
+{
+	padding: 5px;
+	padding-left: 0px;
+	font-size: 18px;
+}
+
+.form .field
+{
+	margin-bottom: 10px;
+}
+
+.form .field-input
+{
+	padding: 5px;
+	font-size: 15px;
+	width: 400px;
+}
+
+.form .save-button
+{
+	cursor: pointer;
+	margin-top: 10px;
+	color: white;
+	background: green;
+	border: 1px solid #ddd;
+	padding: 5px 10px;
+}
+
+.form .save-button:hover
+{
+	background: rgb(60, 176, 60);
+}

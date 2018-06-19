@@ -1,0 +1,141 @@
+body {
+	color: #212121;
+	font-family: arial;
+	font-size:12px;
+	padding:0px;
+	margin:0px;
+}
+img {
+	border: 0;
+}
+.clear {
+	clear:both;
+	height:0;
+	line-height:0;
+}
+.widget {
+	border:1px solid #c3c3c3;
+	background:#f9f9f9;
+	border-radius: 5px 5px 5px 5px;
+	-webkit-border-radius: 5px 5px 5px 5px;
+	-moz-border-radius: 5px 5px 5px 5px;
+	overflow:hidden;
+}
+	.widget a.title:link, .widget a.title:visited  {
+		display:block;
+		height:33px;
+		background:#fff;
+		text-decoration:none;
+	}
+	.widget .title .icon {
+		display:block;
+		float:left;
+		width:25px;
+		height:25px;
+		margin:4px 10px 0 5px;
+	}
+		.widget .title .text {
+			float:left;
+			height:25px;
+			overflow:hidden;
+			margin:5px 0 0 0;
+			color:#2b2b2b;
+			font-size:18px;
+			white-space:nowrap;
+		}
+		.widget .profile {
+			width:100%;
+			border-collapse: collapse;
+		}
+			.widget .profile tr td {
+				padding:0px;
+				margin:0px;
+				text-align:center;
+			}
+			.widget .profile td {
+				border:1px solid #c3c3c3;
+			}
+			.widget .profile .avatar {
+				width:1%;
+				padding:10px !important;
+				border-left:none !important;
+				line-height:0px;
+			}
+				.widget .profile .avatar img {
+					width:60px;
+				}
+			.widget .profile .value {
+				width:33%;
+				height:30px;
+				font-size:14px;
+				font-weight:bold;
+			}
+			.widget .profile span {
+				display:block;
+				font-size:9px;
+				font-weight:bold;
+				color:#999999;
+				margin:-2px 0 0 0;
+			}
+	.widget a.follow:link, .widget a.follow:visited {
+		display:block;
+		background:#ad4141;
+		text-decoration:none;
+		font-size:14px;
+		color:#FFF;
+		font-weight:bold;
+		width:120px;
+		margin:0 auto 0 auto;
+		padding:4px 4px 4px 10px;
+		border:3px solid #FFF;
+		border-radius: 5px 5px 5px 5px;
+		-webkit-border-radius: 5px 5px 5px 5px;
+		-moz-border-radius: 5px 5px 5px 5px;
+		box-shadow: 0 0px 2px rgba(0,0,0,0.5);
+		-moz-box-shadow: 0 0px 2px rgba(0,0,0,0.5);
+		-webkit-box-shadow: 0 0px 2px rgba(0,0,0,0.5);
+	}
+	.widget a.follow:hover {
+		background:#cf3838;
+	}
+	.widget .data {
+		text-align:left;
+		margin:10px 0 0 10px;
+		padding:0 0 5px 0;
+	}
+		.widget .data a.image:link, .widget .data a.image:visited{
+			display:block;
+			float:left;
+			margin:0 5px 5px 0;
+			overflow:hidden;
+			border:2px solid #FFF;
+			box-shadow: 0 1px 1px rgba(0,0,0,0.3);
+			ling-height:0px;
+			text-decoration:none;
+		}
+		.widget .data .image:hover {
+			filter: alpha(opacity=80);
+		 			opacity: 0.8;
+		}
+			.widget .data .image span {
+				display:block;
+				background-repeat:no-repeat;
+				background-size:cover;
+				background-position:center center;
+			}
+	.widget .empty {
+		text-align:center;
+		margin:10px 0 10px 0;
+	}
+.copyright {
+	margin:3px 0 0 0;
+	font-size:10px;
+	text-align:center;
+}
+	.copyright a:link, .copyright a:visited {
+		text-decoration:none;
+		color:#666;
+	}
+	.copyright a:hover {
+		text-decoration:underline;
+	}
